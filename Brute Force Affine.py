@@ -6,14 +6,14 @@ commonwords = ["HELLO ", "HELLO,", " THE ", " AND ", " THAT ", " HAVE ", " NOT "
 
 cyphertext = input("What is the cyphertext?").upper()+" "
 results = []
-for index in range(12):
-  for add in range(25):
+for index in range(len(inverses):
+  for add in range(1, 26):
     common = False
     result = ""
     for character in cyphertext:
       if character.isalpha():
         pos = alph.index(character)
-        pos -= (add+1)
+        pos -= (add)
         pos *= inverses[index]
         result += alph[pos%26]
       else:
