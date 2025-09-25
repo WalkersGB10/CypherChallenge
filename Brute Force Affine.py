@@ -2,7 +2,7 @@ alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 mults = [1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
 inverses = [1, 9, 21, 15, 3, 19, 7, 23, 11, 5, 17, 25]
 
-commonwords = ["HELLO ", "HELLO,", " THE ", " AND ", " THAT ", " HAVE ", " NOT ", " WITH ", " YOU ", " ARE ", " ALL ", " CIPHER ", "ING ", "ION ", " MEET ", " HARRY ", " JODIE ", " SHE ", " THIS ", " THAT ", " BUT ", " BECAUSE ", " WHAT ", " WHO ", " ABOUT ", " WHICH ", " WHEN "]
+commonwords = ["HELLO ", "HELLO,", " THE ", " AND ", " THAT ", " HAVE ", " NOT ", " WITH ", " YOU ", " ARE ", " ALL ", " CIPHER ", "ING ", "ION ", " MEET ", " HARRY ", " JODIE ", " SHE ", " THIS ", " THAT ", " BUT ", " BECAUSE ", " WHAT ", " WHO ", " ABOUT ", " WHICH ", " WHEN ", " JACK ", " ALEX ", " IAN "]
 
 cyphertext = input("What is the cyphertext?").upper()+" "
 results = []
