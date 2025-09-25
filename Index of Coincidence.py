@@ -5,13 +5,19 @@ letters = 0
 
 for character in text.upper():
   if character.isalpha():
-    if character in list(frequency.keys()):
+    if character in frequency:
       frequency[character] += 1
     else:
       frequency[character] = 1
     letters += 1
 
-for key in frequency.keys():
+probabilities = []
+for key in frequency:
   if frequency[key] > 1:
-    probability = (frequency[key] / letters) * ((frequency[key]-1) / (letters-1)) * 2
+    probability = (frequency[key] / letters) * ((frequency[key]-1) / (letters-1))
     print("Probablitiy of Coincidence of", key, "=", probability)
+    probabilities.append(probability)
+index = 0
+for probability in probabilities:
+  index += probability
+print("Index of Coincidence is", index)
