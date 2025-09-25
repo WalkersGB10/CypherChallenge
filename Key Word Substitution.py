@@ -7,8 +7,9 @@ keyword = input("What is the keyword?").upper()
 key = ""
 
 for character in keyword:
-  key += character
-  used += character
+  if character not in used:
+    key += character
+    used += character
 
 add = alph.index(key[-1])
 for index in range(len(alph)):
