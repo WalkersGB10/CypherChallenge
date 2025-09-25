@@ -28,7 +28,7 @@ def calc_frequency(text, results):
     z_score = abs((probabilities[key] - expected[key]) / standard_deviation)
     score += z_score
   score = score / 10
-  if score < 2:
+  if score < 1:
     results[text] = score
   return results
 
@@ -63,8 +63,9 @@ for index in range(12):
       print(result)
     results = calc_frequency(result, results)
 
+print("There are", len(list(results.keys())), "low z scores")
 ans = input("Need to see low z scores?")
 if ans[0].lower() == "y":
   print(len(list(results.keys())))
   for result in results:
-    print(results)
+    print(result, results[result])
