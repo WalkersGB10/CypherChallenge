@@ -12,7 +12,8 @@ for character in keyword:
     used += character
 
 add = alph.index(key[-1])
-for index in range(len(alph)):
+for i in range(len(alph)):
+  index = i
   index += add
   index = index % 26
   if alph[index] not in used:
